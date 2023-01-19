@@ -19,3 +19,226 @@ html,
 body {
   height: 100%;
 }
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  overflow: hidden;
+}
+body .container {
+  width: 1920px;
+  height: 1080px;
+  max-width: 1920px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
+}
+body .container .ellipse {
+  width: 1800px;
+  height: 1800px;
+  background-color: #83bb65;
+  border-radius: 100%;
+  position: absolute;
+  right: -300px;
+  top: -1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+body .container .ellipse > .inner {
+  width: 640px;
+  height: 640px;
+  position: absolute;
+  bottom: -300px;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transform: rotate(20deg);
+  transition: 0.3s;
+}
+body .container .ellipse > .inner > svg {
+  width: 100%;
+  height: 100%;
+}
+body .container .ellipse > .inner > div {
+  position: absolute;
+  margin-bottom: 100px;
+  transform-origin: bottom center;
+}
+body .container .ellipse > .inner > div.img-1 {
+  transform: rotate(40deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-1 > img {
+  transform: rotate(-45deg);
+}
+body .container .ellipse > .inner > div.img-2 {
+  transform: rotate(80deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-2 > img {
+  transform: rotate(-90deg);
+}
+body .container .ellipse > .inner > div.img-3 {
+  transform: rotate(120deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-3 > img {
+  transform: rotate(-135deg);
+}
+body .container .ellipse > .inner > div.img-4 {
+  transform: rotate(160deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-4 > img {
+  transform: rotate(-180deg);
+}
+body .container .ellipse > .inner > div.img-5 {
+  transform: rotate(200deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-5 > img {
+  transform: rotate(-225deg);
+}
+body .container .ellipse > .inner > div.img-6 {
+  transform: rotate(240deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-6 > img {
+  transform: rotate(-270deg);
+}
+body .container .ellipse > .inner > div.img-7 {
+  transform: rotate(280deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-7 > img {
+  transform: rotate(-315deg);
+}
+body .container .ellipse > .inner > div.img-8 {
+  transform: rotate(320deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-8 > img {
+  transform: rotate(-360deg);
+}
+body .container .ellipse > .inner > div.img-9 {
+  transform: rotate(360deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-9 > img {
+  transform: rotate(-405deg);
+}
+body .container .ellipse > .inner > div.img-10 {
+  transform: rotate(400deg) translateY(370px);
+}
+body .container .ellipse > .inner > div.img-10 > img {
+  transform: rotate(-450deg);
+}
+body .container .nav {
+  height: 100px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333333;
+}
+body .container .nav > div {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+body .container .nav > div > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+body .container .nav > div > div svg {
+  fill: #62b62c;
+  transform: translateY(3px);
+}
+body .container .nav > div > div h3 {
+  font-size: 18px;
+}
+body .container .nav > div > ul {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+body .container .nav > div > ul > li > a {
+  color: #333333;
+  transition: 0.15s;
+}
+body .container .nav > div > ul > li > a:hover {
+  color: rgba(51, 51, 51, 0.8);
+}
+body .container .main {
+  display: flex;
+  z-index: 2;
+  flex: 1;
+}
+body .container .main .left {
+  flex: 0.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 100px;
+}
+body .container .main .left > span:nth-of-type(1) {
+  color: #62b62c;
+  font-size: 45px;
+  font-weight: 500;
+}
+body .container .main .left > span:nth-of-type(2) {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+body .container .main .left > button {
+  border: none;
+  background-color: #62b62c;
+  margin-top: 12px;
+  color: #ffffff;
+  border-radius: 500px;
+  padding: 12px 40px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+body .container .main .left > button:hover {
+  background-color: rgba(98, 182, 44, 0.9);
+}
+body .container .main .right {
+  flex: 1.5;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 50px;
+  padding-bottom: 380px;
+}
+body .container .main .right > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 170px;
+}
+body .container .main .right > div > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+body .container .main .right > div > button > svg {
+  fill: #62b62c;
+  transition: 0.15s;
+}
+body .container .main .right > div > button > svg:hover {
+  fill: rgba(98, 182, 44, 0.85);
+}
+body .container .main .right > div > img {
+  width: 240px;
+}
+
+@media (width <= 1550px) {
+  body .container {
+    padding: 0 50px !important;
+  }
+  body .right {
+    padding-right: 200px !important;
+  }
+}
